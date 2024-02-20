@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth; /* faz o scroll mais suave */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    
+}
+
+header{
+    display:flex; /* dispoe elementos na horizontal */
+    justify-content: space-around; /* alinha os elementos na horizontal */
+    align-items: center; /* alinha os elementos na vertical */
+    background-color: grey;
+    padding: 15px;
+    text-align: center; /* centra o texto */
+}
+
+.titulo{
+    border: none; /* retira a borda do elementol */
+    color: white;
+}
+
+header div a{
+    text-decoration: none; /* retira sublinhado dos links */
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px; /* arredonda campos elemento */
+}
+
+header div a:hover{ /* honer permite alterar as prpriedades qd passamos com cursor */
+    background-color: aliceblue;
+    color: grey;
+}
+
+main{
+    width: 50%; /* define largura do elementol */
+    margin: 20px auto; /* o auto insere o elemento no meio da pagina */
+
+}
+
+.negrito {
+font-weight: bold; /* letra fica a negrito */
+}
+
+p{
+    line-height: 30px; /* da espaço entre linhas */
+}
+
+.janela{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.texto{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+}
+.link-detalhes{
+    text-align:center;
+    border: 1px solid black;
+}
+.detalhes{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block; /* permite aplicar margem no elemento inline */
+    margin: 20px 0px;
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    margin: 20 px auto;
+}
+
+form label,
+form input,
+form textarea {
+    display:block; /* converte um elemento inline num elemento block que ocupa toda a linha */
+    width: 100%;
+}
+
+form input, /* o input e um campo do fomulario para escrevermos */
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 106%;
+
+}
+
+footer{
+    background-color: grey;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 760px) {
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    header div a {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    main {
+        width: 80%;
+    }
+
+    form{
+        width: 80%;
+    }
+}
